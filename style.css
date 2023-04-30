@@ -1,0 +1,138 @@
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --dark-blue: hsl(212, 21%, 14%);
+  --grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--cream);
+}
+
+div.main_div {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left:  50%;
+  transform: translate(-50%, -50%);
+  border-radius: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+}
+
+div.main_div div.image_div img {
+  width: 250px;
+  border-radius: 18px 0 0 18px;
+}
+
+div.main_div div.image_div img:nth-child(2){
+    display: none;
+}
+
+div.main_div div.written_body_div {
+  display: flex;
+  width: 200px;
+  padding: 25px;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+div.main_div div.written_body_div h1 {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: var(--grayish-blue);
+}
+
+div.main_div div.written_body_div h2 {
+  color: var(--dark-blue);
+  font-family: "Fraunces", serif;
+  width: 200px;
+  font-size: 30px;
+  line-height: 30px
+}
+
+div.main_div div.written_body_div p.main_para {
+  color: var(--grayish-blue);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+div.main_div div.written_body_div p.rate {
+  width: 100%;
+  position: relative;
+}
+
+div.main_div div.written_body_div p span {
+  color: var(--dark-cyan);
+  font-weight: 700;
+  font-size: 30px;
+  font-family: "Fraunces", serif;
+}
+
+div.main_div div.written_body_div p s {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  color: var(--grayish-blue);
+}
+
+div.main_div div.written_body_div button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+div.main_div div.written_body_div button:hover {
+  cursor: pointer;
+  background-color: #1a4031;
+}
+
+div.main_div div.written_body_div button img {
+  margin: 0 10px;
+}
+
+@media screen and (max-width:550px) {
+
+    div.main_div{
+      height: 650px;
+        width: 90%;
+    }
+
+    div.main_div div.image_div img:nth-child(1){
+        display: none;
+    }
+
+    div.main_div div.image_div{
+      height: 250px;
+    }
+
+    div.main_div div.image_div img:nth-child(2){
+        display: block;
+        width: 100%;
+        border-radius: 18px 18px 0 0 ;
+
+    }
+
+    div.main_div div.written_body_div{
+        width: 100%;
+        padding-top: 0;
+        height: 400px;
+    }
+}
+
