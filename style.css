@@ -21,12 +21,12 @@ div.main_div {
   width: 550px;
   position: absolute;
   top: 50%;
-  left:  50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 18px;
   display: flex;
   flex-wrap: wrap;
-  height:400px;
+  height: 400px;
 }
 
 div.main_div div.image_div img {
@@ -34,8 +34,8 @@ div.main_div div.image_div img {
   border-radius: 18px 0 0 18px;
 }
 
-div.main_div div.image_div img:nth-child(2){
-    display: none;
+div.main_div div.image_div img:nth-child(2) {
+  display: none;
 }
 
 div.main_div div.written_body_div {
@@ -44,6 +44,7 @@ div.main_div div.written_body_div {
   padding: 25px;
   justify-content: space-evenly;
   flex-direction: column;
+  background-color: var(--white);
 }
 
 div.main_div div.written_body_div h1 {
@@ -57,7 +58,7 @@ div.main_div div.written_body_div h2 {
   font-family: "Fraunces", serif;
   width: 200px;
   font-size: 30px;
-  line-height: 38px
+  line-height: 38px;
 }
 
 div.main_div div.written_body_div p.main_para {
@@ -107,37 +108,31 @@ div.main_div div.written_body_div button img {
   margin: 0 10px;
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width: 550px) {
+  div.main_div {
+    height: 650px;
+    width: 90%;
+  }
 
-    div.main_div{
-      height: 650px;
-        width: 90%;
-    }
+  div.main_div div.image_div img:nth-child(1) {
+    display: none;
+  }
 
-    div.main_div div.image_div img:nth-child(1){
-        display: none;
-    }
+  div.main_div div.image_div img:nth-child(2) {
+    display: block;
+    width: 100%;
+    border-radius: 18px 18px 0 0;
+  }
 
-    div.main_div div.image_div{
-      height: 250px;
-    }
-
-    div.main_div div.image_div img:nth-child(2){
-        display: block;
-        width: 100%;
-        border-radius: 18px 18px 0 0 ;
-
-    }
-
-    div.main_div div.written_body_div{
-        width: 100%;
-        height: 400px;
-    }
-}
-
-@media screen and (max-width:374px) {
-  div.main_div div.written_body_div{
-    padding-top: 0;
+  div.main_div div.written_body_div {
+    width: 100%;
+    height: 400px;
+    margin: 0;
   }
 }
 
+@media screen and (max-width: 374px) {
+  div.main_div div.written_body_div {
+    padding-top: 0;
+  }
+}
