@@ -18,7 +18,7 @@ body {
 }
 
 div.main_div {
-  width: 500px;
+  width: 550px;
   position: absolute;
   top: 50%;
   left:  50%;
@@ -26,11 +26,11 @@ div.main_div {
   border-radius: 18px;
   display: flex;
   flex-wrap: wrap;
-  height: 400px;
+  height:400px;
 }
 
 div.main_div div.image_div img {
-  width: 250px;
+  width: 275px;
   border-radius: 18px 0 0 18px;
 }
 
@@ -44,7 +44,6 @@ div.main_div div.written_body_div {
   padding: 25px;
   justify-content: space-evenly;
   flex-direction: column;
-  background-color: var(--white);
 }
 
 div.main_div div.written_body_div h1 {
@@ -58,7 +57,7 @@ div.main_div div.written_body_div h2 {
   font-family: "Fraunces", serif;
   width: 200px;
   font-size: 30px;
-  line-height: 30px
+  line-height: 38px
 }
 
 div.main_div div.written_body_div p.main_para {
@@ -132,8 +131,13 @@ div.main_div div.written_body_div button img {
 
     div.main_div div.written_body_div{
         width: 100%;
-        padding-top: 0;
         height: 400px;
     }
+}
+
+@media screen and (max-width:374px) {
+  div.main_div div.written_body_div{
+    padding-top: 0;
+  }
 }
 
