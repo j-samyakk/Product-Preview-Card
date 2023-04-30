@@ -44,6 +44,7 @@ div.main_div div.written_body_div {
   padding: 25px;
   justify-content: space-evenly;
   flex-direction: column;
+  background-color: var(--white);
 }
 
 div.main_div div.written_body_div h1 {
